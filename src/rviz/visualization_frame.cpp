@@ -140,6 +140,7 @@ VisualizationFrame::VisualizationFrame( QWidget* parent )
 
   QToolButton* reset_button = new QToolButton( );
   reset_button->setText( "Reset" );
+  reset_button->setShortcut( Qt::CTRL + Qt::SHIFT + Qt::Key_R );
   reset_button->setContentsMargins(0,0,0,0);
   statusBar()->addPermanentWidget( reset_button, 0 );
   connect( reset_button, SIGNAL( clicked( bool )), this, SLOT( reset() ));
